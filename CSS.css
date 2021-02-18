@@ -1,0 +1,198 @@
+/* Basic setup */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1140px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+    /* setting up the background img */
+    background: url(./assets/dubstep-hip-hop-typography-digital-art-wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#s1{
+ color: black;
+ font-size: 60px;
+ padding: 40px;
+ font-family: 'Bangers';
+}
+
+.k1{
+    margin:38px;
+}
+
+.k2{
+    margin: 32px;
+}
+.pos{
+    position: absolute;
+    top:30px;
+    right:700px;
+    width: 500px;
+    height: 50px;
+}
+
+.pos1{
+    position:relative;
+    top:140px;
+}
+
+.pos2{
+    position:relative;
+    top:-140px;
+}
+
+.pos3{
+    position: absolute;
+    width:200px;
+    left:850px;
+    height:50px;
+}
+
+.pos4{
+    position: absolute;
+    top:750px;
+    width:200px;
+    right:875px;
+    height:50px;
+}
+.keys {
+    /*Keep things centered*/
+    margin-left: 40px;
+    margin-right: 40px;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.keyss {
+    /*Keep things centered*/
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    height:100px;
+    width:200px;
+    border-radius: 100px;
+    flex: 1;
+    border: 10px solid #48bfe3;
+   /* border-radius: 100px 100px 100px 100px;*/
+    background-color: #80ffdb;
+    /*make some space & nice border*/
+    padding: 15px;
+
+    /*make the inside text center*/
+    text-align: center;
+
+    color: #7400b8;
+
+    /*dependency*/
+    box-shadow: 0px 0px 0px 0px none;
+    transition: box-shadow 0.06s linear;
+}
+
+.key1 {
+    height:100px;
+    width:200px;
+    border-radius: 100px;
+    flex: 1;
+    border: 10px solid #48bfe3;
+   /* border-radius: 100px 100px 100px 100px;*/
+    margin:38px;
+    background-color: #80ffdb;
+    /*make some space & nice border*/
+    padding: 15px;
+
+    /*make the inside text center*/
+    text-align: center;
+
+    color: #7400b8;
+
+    /*dependency*/
+    box-shadow: 0px 0px 0px 0px none;
+    transition: box-shadow 0.06s linear;
+}
+
+/*---------SOUND BAR-----------*/
+#bars {
+    height: 30px;
+    left: 50%;
+    margin: -30px 0 0 -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    display:none;
+}
+
+#barss {
+    height: 30px;
+    left: 50%;
+    margin: -30px 0 0 -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    display:none;
+}
+
+.bar {
+   background: blue;
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 3px;      
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 9px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 58px;        
+    }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }
+
+/*-------------------XXX------------------------*/
+
+div kbd {
+    display: block;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+
+div span {
+    color: black;
+    font-weight: 300;
+}
+
+.playing {
+    border: 10px solid #6930c3;
+    box-shadow: 0px 0px 0px 2px #007f5f;
+
+    margin: 0.5em;
+}
